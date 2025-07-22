@@ -1,13 +1,13 @@
 # Baby-Weight-Prediction
 
-# 👶 Baby Weight Prediction - Flask App
+# 👶 Baby Weight Prediction(OUNCES) - Flask App
 
 This project is a **machine learning web application** that predicts the weight of a baby at birth based on various maternal factors such as:
 
-- Mother's weight
-- Height
+- Mother's weight (pounds)
+- Height (inches)
 - Age
-- Smoking status
+- Smoking status (0 - non smoker ) (1 - smoker)
 - Other medical indicators
 
 The backend is powered by a **trained regression model** using `scikit-learn`, with a `Flask` API that exposes a `/predict` endpoint for real-time predictions.
