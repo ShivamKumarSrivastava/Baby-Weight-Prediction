@@ -44,5 +44,4 @@ The backend is powered by a **trained regression model** using `scikit-learn`, w
 
 ---
 
-## 📁 Project Structure
 
