@@ -40,7 +40,7 @@ The backend is powered by a **trained regression model** using `scikit-learn`, w
 - Maternal height
 - Age of the mother
 - Smoking status (binary)
-- gestational weeks, etc.
+- gestational days, etc.
 
 ---
 
