@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Weight Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Predicts Baby Birth Weight</h1>
+    <form action="/predict" method="POST">
+        
+        <div style="display: flex; gap: 20px;">
+            <label>Gestation</label>
+            <input name="gestation" type="number"><br>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <label>Parity</label>
+            <input name="parity" type="number"><br>
+        </div>
+
+
+        <div style="display: flex; gap: 20px;">
+            <label>Age</label>
+            <input name="age" type="number"><br>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <label>Height</label>
+            <input name="height" type="number"><br>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <label>Weight</label>
+            <input name="weight" type="number"><br>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <label>Smoke</label>
+            <input name="smoke" type="number"><br>
+        </div>
+
+        <button type="submit">Predict Birth Weight</button>
+    </form>
+    {% if prediction is not none %}
+    <h3> Predicted Birth Weight : {{(prediction/35.274) | round(2)}} KG</h3>
+    {% endif %}
+</body>
+
+</html>
